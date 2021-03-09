@@ -1,7 +1,9 @@
+
+
 import re
 p= input("Enter your password")
-x = True
-while x:
+t = True
+while t:
     if (len(p)<7):
         break
     elif not re.search("[a-z]",p):
@@ -19,5 +21,5 @@ while x:
         x=False
         break
 
-if x:
+if t:
     print("Password is not secure, please try again.")
